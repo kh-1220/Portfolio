@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamryn Burke | Interests</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Kamryn Burke</h1>
+        <h2>Information Technology Major</h2>
+        <h3>Middle Georgia State University</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="resume.htm">Resume</a></li>
+            <li><a href="interests.htm">Interests</a></li>
+            <li><a href="donate.htm">Donate</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Interests</h2>
+
+            <p>
+                Some of my personal interests include gardening,
+                working out, and playing basketball.
+            </p>
+
+            <ul>
+                <li>
+					<strong>Gardening</strong>
+					<p>
+					I enjoy gardening because I like growing and caring for
+					different plants. Gardening also gives me the opportunity
+					to learn more about how plants grow and how to properly
+					care for them.
+				</p>
+              </li>
+			   
+				<li>
+					<strong>Working Out</strong>
+					<p>
+						Working out helps me stay healthy and improve my strength
+						and overall fitness. I also like learning new exercises
+						and finding different ways to stay fit.
+				</p>
+			  </li>
+			
+                <li>
+					<strong>Playing Basketball</strong>
+					<p>
+						I like playing basketball for fun and as another way to
+						exercise. Basketball is something that I have enjoyed
+						for many years and continue to do in my free time.
+                </p>
+			  </li>
+            </ul>
+			
+			<button type="button" id="colorButton">Change Background</button>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Kamryn Burke | Information Technology Portfolio</p>
+    </footer>
+
+	<script>
+    document.getElementById("colorButton").onclick = function() {
+        if (document.body.style.backgroundColor === "rgb(230, 213, 219)") {
+            document.body.style.backgroundColor = "#faf7f8";
+        } else {
+            document.body.style.backgroundColor = "#e6d5db";
+        }
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamryn Burke</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+		 <header>
+        <div>
+            <h1>Kamryn Burke</h1>
+			<h2>Information Technology Major</h2>
+			<h3>Middle Georgia State University</h3>
+        </div>
+
+        <div>
+            <p>
+                Warner Robins, Georgia
+            </p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+			<li><a href="resume.htm">Resume</a></li>
+			<li><a href="interests.htm">Interests</a></li>
+			<li><a href="donate.htm">Donate</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                I am an Information Technology major at Middle Georgia State
+                University. I enjoy learning about technology, solving problems,
+                and developing new technical skills. Through my coursework, I
+                have gained knowledge in networking, web development,
+				human-computer interaction, and other information technology concepts.
+            </p>
+
+            <p>
+                My goal is to continue developing my technical skills and gain
+				hands-on experience in the information technology field. I am
+				currently interested in the Health Informatics concentration and
+				look forward to exploring different areas of information technology
+				as I continue my education.
+			</p>
+			
+			<p>
+				I am currently working toward completing my bachelor's degree in
+				Information Technology while continuing to build my technical skills
+				through coursework and hands-on projects.
+            </p>
+			
+			<button type="button" id="funFactButton">Show Fun Fact</button>
+
+			<p id="funFact">
+			<strong>Fun Fact:</strong> I used to participate in pageants when I was younger.
+			
+			</p>
+
+			<table>
+    <caption>Education</caption>
+
+    <tr>
+        <td>B.S. in Information Technology</td>
+        <td>Middle Georgia State University</td>
+        <td>Expected 2028</td>
+    </tr>
+
+    <tr>
+        <td>A.S. in General Studies</td>
+        <td>Central Georgia Technical College</td>
+        <td>May 2026</td>
+    </tr>
+	</table>
+
+        </section>
+
+        <section id="interests">
+            <h2>Interests</h2>
+
+            <p>Outside of technology and school, I enjoy several activities.</p>
+
+		<ul>
+			<li>Gardening</li>
+			<li>Working Out</li>
+			<li>Playing Basketball</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div>
+        <h3>Web Development</h3>
+        <p>
+            I am currently developing websites using HTML and CSS as part
+            of my Web Development course.
+        </p>
+    </div>
+
+    <div>
+        <h3>Networking</h3>
+        <p>
+            Through my Network Essentials coursework, I gained knowledge
+            of computer networks and networking fundamentals.
+        </p>
+    </div>
+
+    <div>
+        <h3>Information Technology Coursework</h3>
+        <p>
+            I am continuing to build my technical knowledge through
+            projects and assignments in my Information Technology courses.
+        </p>
+    </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kamryn Burke | Information Technology Portfolio</p>
+    </footer>
+	
+	<script>
+    document.getElementById("funFactButton").onclick = function() {
+        var funFact = document.getElementById("funFact");
+
+        if (funFact.style.display === "block") {
+            funFact.style.display = "none";
+            this.innerHTML = "Show Fun Fact";
+        } else {
+            funFact.style.display = "block";
+            this.innerHTML = "Hide Fun Fact";
+        }
+    };	
+</script>
+
+</body>
+</html>

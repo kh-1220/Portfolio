@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+        <title>Donate Form</title>
+		<link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Donate to Me</h1>
+		<form>
+			Gender:
+			<br />
+			<input type="radio" value="Mr." id="mr" name="gender" />
+			<label for="mr">Mr.</label>
+			<br />
+			<input type="radio" value="Ms." id="ms" name="gender" />
+			<label for="ms">Ms.</label>
+			<br />
+			<input type="radio" value="Mx." id="mx" name="gender" />
+			<label for="mx">Mx.</label>
+			<br />
+			<label for="fName">First Name:</label>
+			<input type="text" id="fName" required />
+			<br />
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" />
+			<br />
+			<label for="email">Email:</label>
+			<input type="email" id="email" />
+			<br />
+			<label for="date">Date:</label>
+			<input type="date" id="date" />
+			<br />
+			<label for="phonetype">Phone Type:</label>
+			<select id="phonetype">
+				<option>--SELECT ONE</option>
+				<option>Landline</option>
+				<option>Mobile</option>
+				<option>Work</option>
+			</select>
+			<br />
+			<label for="phone">Phone:</label>
+			<input type="text" id="phone" />
+			<br />
+			<label for="amount">Amount:</label>
+			<input type="number" id="amount" min="0" />
+			<br />
+			<label for="cc">Credit Card Num:</label>
+			<input type="text" id="cc" minlength="15" maxlength="16" />
+			<br />
+			<label for="secCode">Security Code:</label>
+			<input type="text" id="secCode" maxlength="3" minlength="3" />
+			<br />
+			<input type="checkbox" id="eula" />
+			<label for="eula">Agree to first-born child in EULA</label>
+			
+			<br /><br />
+			
+			
+			<button type="button" id="btnGo">Launch</button>
+        </form>
+		
+		<script>
+			function init() {
+			document.getElementById("btnGo").onclick = function() { 
+				var fName = document.getElementById("fName").value;
+				var msg = "Hello " + fName + " welcome to JS!";					
+				alert(msg);
+				}
+			}
+			init();
+		</script>
+    </body>
+</html>
